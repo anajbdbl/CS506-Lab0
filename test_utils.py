@@ -28,7 +28,7 @@ def test_nearest_neighbor():
     vector1 = np.array([2, 2, 2])
     vectors = np.array([
         [1, 0, 0],
-        [0, 1, 1],
+        [2, 2, 2],
         [3, 3, 3],
         [0, 0, 1]
     ])
