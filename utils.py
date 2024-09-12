@@ -46,7 +46,7 @@ def nearest_neighbor(target_vector, vectors):
     # Hint: For this lab, you can just use a for loop to iterate through vectors.
     '''
     ### YOUR CODE HERE
-    best = -1.0
+    best = -1
     index = -1
 
     for i, vector in enumerate(vectors):
