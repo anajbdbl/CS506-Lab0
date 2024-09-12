@@ -26,9 +26,13 @@ def test_cosine_similarity():
 def test_nearest_neighbor():
     ### YOUR CODE HERE
     vector1 = np.array([1, 2, 3])
-    vector2 = np.array([1, 2, 3])
+    vectors = np.array([
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
+    ])
     
-    result = nearest_neighbor(vector1, vector2)
+    result = nearest_neighbor(vector1, vectors)
     
     expected_index = 0
     
