@@ -47,7 +47,7 @@ def nearest_neighbor(target_vector, vectors):
     '''
     ### YOUR CODE HERE
     best = -1.0
-    index = -1.0 
+    index = -1
 
     for i, vector in enumerate(vectors):
         similar = cosine_similarity(target_vector, vector)
