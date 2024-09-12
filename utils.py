@@ -32,7 +32,10 @@ def cosine_similarity(v1, v2):
 
     normv1 = np.linalg.norm(v1)
     normv2 = np.linalg.norm(v2)
-
+    
+    if normv1 == 0 or normv2 == 0:
+        return 0.0
+        
     return (dotProduct / (normv1 * normv2))
     
 def nearest_neighbor(target_vector, vectors):
@@ -46,7 +49,7 @@ def nearest_neighbor(target_vector, vectors):
     # Hint: For this lab, you can just use a for loop to iterate through vectors.
     '''
     ### YOUR CODE HERE
-    best = -1
+    best = -1.0
     index = -1
 
     for i, vector in enumerate(vectors):
