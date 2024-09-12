@@ -56,4 +56,4 @@ def nearest_neighbor(target_vector, vectors):
             index = i
             best = similar
 
-    return best
+    return round(best)
